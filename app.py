@@ -26,7 +26,7 @@ def get_all_wilaya():
                 wil["surface"] = w["surface"]
                 Wilaya.append(wil)
         except:
-            return 'Something happen'
+            return 'Something happened'
         finally:
             conn.close()    
 
@@ -43,7 +43,7 @@ def get_single_wilaya(wilaya_code):
         wil["population"] = data["population"]
         wil["surface"] = data["surface"]
     except:
-        return 'Something happen'
+        return 'Something happened'
     finally:
         conn.close() 
 
