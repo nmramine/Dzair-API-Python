@@ -102,9 +102,14 @@ def get_single_wilaya(wilaya_code):
         wil["name"] = data["name"]
         wil["population"] = data["population"]
         wil["surface"] = data["surface"]
+<<<<<<< HEAD
         
     except Exception as e:
        return print(e)
+=======
+    except:
+        return 'Something happened'
+>>>>>>> 8459a9e2e4ea359d11fac3cfd2b4cf337f9a3822
     finally:
         conn.close() 
 
